@@ -8,3 +8,5 @@ def openHtmlFunction():
   print('<!DOCTYPE html>')
   print('  ' + openHtml)
   return
+
+openHtmlFunction()
