@@ -1,10 +1,3 @@
-from distutils.core import setup
+from setuptools.config import read_configuration
 
-setup(name='Distutils',
-      version='1.0',
-      description='Python Distribution Utilities',
-      author='Greg Ward',
-      author_email='gward@python.net',
-      url='https://www.python.org/sigs/distutils-sig/',
-      packages=['distutils', 'distutils.command'],
-     )
+conf_dict = read_configuration("/home/user/dev/package/setup.cfg")
