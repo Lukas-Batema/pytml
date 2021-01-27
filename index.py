@@ -1,3 +1,76 @@
+# <html>...</html> element.
+openHtml='<html>'
+closedHtml='</html>'
+def htmlOpen():
+  print('<!DOCTYPE html>')
+  print('  ' + openHtml)
+  return
+
+def htmlClosed():
+  print('  ' + closedHtml)
+  return
+
+# <html>...</html> element.
+openHead='<head>'
+closedHead='</head>'
+def headOpen():
+  print('<!DOCTYPE html>')
+  print('  ' + openHead)
+  return
+
+def headClosed():
+  print('  ' + closedHead)
+  return
+
+# <body>...</body> element.
+openBody='<body>'
+closedBody='</body>'
+def bodyOpen():
+  print('    ' + openBody)
+  return
+
+def bodyClosed():
+  print('    ' + closedBody)
+  return
+
+# <footer>...</footer> element.
+openHtml='<footer>'
+closedHtml='</footer>'
+def footerOpen():
+  print('  ' + openFooter)
+  return
+
+def footerClosed():
+  print('  ' + closedFooter)
+  return
+
+# <h1>...</h1> element.
+openH5='<h1>'
+closedH5='</h1>'
+def h1():
+  print('      ' + openH1 + input(tagInfo) + closedH1)
+  return
+
+# <h2>...</h2> element.
+openH2='<h2>'
+closedH2='</h2>'
+def h2():
+  print('      ' + openH2 + input(tagInfo) + closedH2)
+  return
+
+# <h3>...</h3> element.
+openH3='<h3>'
+closedH3='</h3>'
+def h3():
+  print('      ' + openH3 + input(tagInfo) + closedH3)
+  return
+
+# <h4>...</h4> element.
+openH4='<h4>'
+closedH4='</h4>'
+def h4():
+  print('      ' + openH4 + input(tagInfo) + closedH4)
+  return
 
 # <h5>...</h5> element.
 openH5='<h5>'
