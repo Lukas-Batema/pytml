@@ -14,7 +14,6 @@ def htmlClosed():
 openHead='<head>'
 closedHead='</head>'
 def headOpen():
-  print('<!DOCTYPE html>')
   print('  ' + openHead)
   return
 
