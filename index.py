@@ -1,3 +1,6 @@
+# Tag input.
+tagInfo=''
+
 # <html>...</html> element.
 openHtml='<html>'
 closedHtml='</html>'
@@ -19,6 +22,19 @@ def headOpen():
 
 def headClosed():
   print('  ' + closedHead)
+  return
+
+# <title>...</title> element.
+openTitle='<title>'
+closedTitle='</title>'
+def title():
+  print('    ' + openTitle + input(tagInfo) + closedTitle)
+  return
+
+# <link...> element.
+openLink='<link '
+def link():
+  print('    ' + openLink + '>')
   return
 
 # <body>...</body> element.
