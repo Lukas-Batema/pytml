@@ -132,3 +132,88 @@ closedU='</u>'
 def u():
   print('        ' + openU + input(tagInfo) + closedU)
   return
+
+# <pre>...</pre> element.
+openPre='<pre>'
+closedPre='</pre>'
+def pre():
+  print('        ' + openPre + input(tagInfo) + closedPre)
+  return
+
+# <strong>...</strong> element.
+openStrong='<strong>'
+closedStrong='</strong>'
+def strong():
+  print('        ' + openStrong + input(tagInfo) + closedStrong)
+  return
+
+# <em>...</em> element.
+openEm='<em>'
+closedEm='</em>'
+def em():
+  print('        ' + openEm + input(tagInfo) + closedEm)
+  return
+
+# <sub>...</sub> element.
+openSub='<sub>'
+closedSub='</sub>'
+def sub():
+  print('        ' + openSub + input(tagInfo) + closedSub)
+  return
+
+# <sup>...</sup> element.
+openSup='<sup>'
+closedSup='</sup>'
+def sup():
+  print('        ' + openSup + input(tagInfo) + closedSup)
+  return
+
+# <del>...</del> element.
+openDel='<del>'
+closedDel='</del>'
+def delete():
+  print('        ' + openDel + input(tagInfo) + closedDel)
+  return
+
+# <s>...</s> element.
+# Same as <del>...</del> element.
+openS='<s>'
+closedS='</s>'
+def s():
+  print('        ' + openS + input(tagInfo) + closedS)
+  return
+
+# <ins>...</ins> element.
+openIns='<ins>'
+closedIns='</ins>'
+def ins():
+  print('        ' + openIns + input(tagInfo) + closedIns)
+  return
+
+# <br> element.
+openBr='<br>'
+def br():
+  print(openBr)
+  return
+
+# <address>...</address> element.
+openAddress='<address>'
+closedAddress='</address>'
+def addressOpen():
+  print('        ' + openAddress)
+  return
+
+def addressClosed():
+  print('        ' + closedAddress)
+  return
+
+# Instructions
+def pytmlHelp(tagInfo):
+  if tagInfo='html':
+    print('Usage: htmlOpen() for open html tag and htmlClosed() for closed html tag')
+  elif tagInfo='htmlOpen()' or 'htmlOpen':
+    print('Usage: htmlOpen() for the open html tag')
+  elif tagInfo='htmlClosed()' or 'htmlClosed':
+    print('Usage: htmlClosed() for closed html tag')
+  elif tagInfo='head':
+    print('Usage')
