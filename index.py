@@ -208,12 +208,12 @@ def addressClosed():
   return
 
 # Instructions
-def pytmlHelp(tagInfo):
-  if tagInfo='html':
-    print('Usage: htmlOpen() for open html tag and htmlClosed() for closed html tag')
-  elif tagInfo='htmlOpen()' or 'htmlOpen':
-    print('Usage: htmlOpen() for the open html tag')
-  elif tagInfo='htmlClosed()' or 'htmlClosed':
-    print('Usage: htmlClosed() for closed html tag')
-  elif tagInfo='head':
-    print('Usage')
+# def pytmlHelp(tagInfo):
+#  if tagInfo='html':
+#   print('Usage: htmlOpen() for open html tag and htmlClosed() for closed html tag')
+#  elif tagInfo='htmlOpen()' or 'htmlOpen':
+#    print('Usage: htmlOpen() for the open html tag')
+#  elif tagInfo='htmlClosed()' or 'htmlClosed':
+#    print('Usage: htmlClosed() for closed html tag')
+#  elif tagInfo='head':
+#    print('Usage')
