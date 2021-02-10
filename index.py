@@ -60,8 +60,8 @@ def footerClosed():
   return
 
 # <h1>...</h1> element.
-openH5='<h1>'
-closedH5='</h1>'
+openH1='<h1>'
+closedH1='</h1>'
 def h1():
   print('      ' + openH1 + input(tagInfo) + closedH1)
   return
@@ -208,12 +208,108 @@ def addressClosed():
   return
 
 # Instructions
-# def pytmlHelp(tagInfo):
-#  if tagInfo='html':
-#   print('Usage: htmlOpen() for open html tag and htmlClosed() for closed html tag')
-#  elif tagInfo='htmlOpen()' or 'htmlOpen':
-#    print('Usage: htmlOpen() for the open html tag')
-#  elif tagInfo='htmlClosed()' or 'htmlClosed':
-#    print('Usage: htmlClosed() for closed html tag')
-#  elif tagInfo='head':
-#    print('Usage')
+def pytmlHelp(tagInfo):
+  if tagInfo=='html':
+    print('Usage: htmlOpen() for open html tag and htmlClosed() for closed html tag. Type, "htmlOpen" for more details on the open tag and type, "htmlOpen" for more details on the closed tag.')
+    print('')
+    print('Displays:')
+    print('<!DOCTYPE html>')
+    print('  ' + openHtml)
+    print('*user input*')
+    print('  ' + closedHtml)
+    return
+  elif tagInfo=='htmlOpen()' or 'htmlOpen':
+    print('Usage: htmlOpen() for the open html tag.')
+    print('')
+    print('Displays:')
+    print('<!DOCTYPE html>')
+    print('  ' + openHtml)
+    print('*user input*')
+    return
+  elif tagInfo=='htmlClosed()' or 'htmlClosed':
+    print('Usage: htmlClosed() for closed html tag.')
+    print('')
+    print('Displays:')
+    print('  ' + closedHtml)
+    return
+  elif tagInfo=='head':
+    print('Usage: headOpen() for the open head tag and headClosed() for the closed head tag. Type, "headOpen" for more details on the open tag and type, "headClosed" for more details on the closed tag.')
+    print('')
+    print('Displays:')
+    print('    ' + openHead)
+    print('*user input*')
+    print('    ' + closedHead)
+    return
+  elif tagInfo=='headOpen()' or 'headOpen':
+    print('Usage: headOpen() for the open head tag.')
+    print('')
+    print('Displays:')
+    print('    ' + openHead)
+    print('*user input*')
+    return
+  elif tagInfo=='headClosed()' or 'headClosed':
+    print('Usage: headClosed() for closed head tag.')
+    print('')
+    print('Displays:')
+    print('    ' + closedHead)
+    return
+  elif tagInfo=='title()' or 'title':
+    print('Usage: title()')
+    print('')
+    print('Displays:')
+    print('      ' + openTitle + '*user input*' + closedTitle)
+    return
+  elif tagInfo=='link()' or 'link':
+    print('Usage: link()')
+    print('')
+    print('Displays:')
+    print('      ' + openLink + '*user input*' + '>')
+    return
+  elif tagInfo=='body':
+    print('Usage: bodyOpen() for open tag and bodyClosed() for closed tag. Type, "bodyOpen()" for more details on the open tag and type, "bodyClosed()" for more details on the closed tag.')
+    print('')
+    print('Displays:')
+    print('    ' + openBody)
+    print('*user input*')
+    print('    ' + closedBody)
+    return
+  elif tagInfo=='bodyOpen()' or 'bodyOpen':
+    print('Usage: bodyOpen() for open body tag')
+    print('')
+    print('Displays:')
+    print('    ' + openBody)
+    print('*user inuput*')
+    return
+  elif tagInfo=='bodyClosed()' or 'bodyClosed':
+    print('Usage: bodyClosed() for closed body tag.')
+    print('')
+    print('Displays:')
+    print('    ' + closedBody)
+    return
+  elif tagInfo=='footer':
+    print('Usage: footerOpen() for open tag and footerClosed() for closed tag. Type, "footerOpen()" for more details on the open tag and type, "footerClosed()" for more details on the closed tag.')
+    print('')
+    print('Displays:')
+    print('    ' + openFooter)
+    print('*user input*')
+    print('    ' + closedFooter)
+    return
+  elif tagInfo=='footerOpen()' or 'footerOpen':
+    print('Usage: footerOpen() for open footer tag.')
+    print('')
+    print('Displays:')
+    print('    ' + openFooter)
+    print('*user input*')
+    return
+  elif tagInfo=='footerClosed()' or 'footerClosed':
+    print('Usage: footerClosed() for closed footer tag.')
+    print('')
+    print('Displays:')
+    print('    ' + closedFooter)
+    return
+  elif tagInfo=='h1()' or 'h1':
+    print('Usage: h1()')
+    print('')
+    print('Displays:')
+    print('      ' + openH1 + '*user input*' + closedH1)
+    return
