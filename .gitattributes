@@ -1,0 +1,4 @@
+/*.md linguist-detectable
+/*.md -linguist-documentation
+LICENSE linguist-detectable
+LICENSE -linguist-documentation
