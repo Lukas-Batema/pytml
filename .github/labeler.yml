@@ -1,0 +1,16 @@
+# Add 'documentation' label to any documentation file changes
+documentation:
+  - .gitignore
+  - .gitattributes
+  - README.md
+  - LICENSE
+  - .github/*/*.*
+  - .github/*/*/*.*
+  
+# Add 'test' label to any change to src/java/test/**/* files within the source dir
+test:
+  - prgm/test/python/lukasbatema/tinspirecascxii/v5.2/index.py
+
+# Add 'source' label to any change to src files within the source dir
+source:
+  - prgm/source/python/lukasbatema/tinspirecascxii/v5.2/index.py
